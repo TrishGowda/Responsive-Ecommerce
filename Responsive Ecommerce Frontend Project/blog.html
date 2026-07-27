@@ -14,6 +14,17 @@
   </head>
 
   <body>
+    <!-- ===========================
+Loading Screen
+=========================== -->
+
+    <div class="loader-wrapper">
+      <div class="loader"></div>
+
+      <h2>TRISHA STORE</h2>
+
+      <p>Loading Amazing Blogs...</p>
+    </div>
     <section id="header">
       <a href="#"><img src="img/logo.png" class="logo" alt="" /> </a>
 
@@ -36,72 +47,184 @@
       </div>
     </section>
 
-    <section id="page-header" class="blog-header">
-      <h2>#Readmore</h2>
-      <p>Read all case studies about our product!</p>
+    <div class="hero-overlay"></div>
+
+    <div class="hero-content">
+      <span class="hero-tag">LATEST BLOGS</span>
+
+      <h1>Discover The Future<br />Of Fashion</h1>
+
+      <p>
+        Read premium fashion stories, style tips & trends from around the world.
+      </p>
+
+      <a href="#blog" class="hero-btn">
+        Explore Blogs
+        <i class="fas fa-arrow-right"></i>
+      </a>
+    </div>
+
+    <div class="scroll-indicator">
+      <span></span>
+    </div>
+
+    <!-- ===========================
+Blog Search & Filter
+=========================== -->
+
+    <section id="blog-filter">
+      <input type="text" id="searchBlog" placeholder="🔍 Search Articles..." />
+
+      <div class="filter-buttons">
+        <button class="filter-btn active" data-filter="all">All</button>
+
+        <button class="filter-btn" data-filter="Fashion">Fashion</button>
+
+        <button class="filter-btn" data-filter="Lifestyle">Lifestyle</button>
+
+        <button class="filter-btn" data-filter="Trending">Trending</button>
+
+        <button class="filter-btn" data-filter="Minimal">Minimal</button>
+
+        <button class="filter-btn" data-filter="Collection">Collection</button>
+      </div>
     </section>
 
-    <section id ="blog">
+    <section id="blog">
+      <!-- Blog 1 -->
       <div class="blog-box">
-        <diV class ="blog-img">
-          <img src="img/blog/b1.jpg" alt="">
-        </diV>
-        <div class="blog-details">
-          <h4> The Cotton-Jersey Zip-Up Hoodie</h4>
-          <p> Experience unmatched comfort with our premium cotton-jersey hoodie. Designed for everyday wear, it combines softness, 
-             durability, and effortless style for every occasion.</p>
-            <a href="#">CONTINUE READING</a>
+        <div class="blog-img">
+          <img src="img/blog/b1.jpg" alt="" />
+          <span class="category">Fashion</span>
         </div>
-        <h1>13/01</h1>
+
+        <div class="blog-details">
+          <div class="blog-meta">
+            <span><i class="far fa-calendar"></i> Jan 13, 2026</span>
+            <span><i class="far fa-clock"></i> 5 min read</span>
+          </div>
+
+          <h3>The Cotton-Jersey Zip-Up Hoodie</h3>
+
+          <p>
+            Experience unmatched comfort with our premium cotton-jersey hoodie.
+            Designed for everyday wear, it combines softness, durability, and
+            effortless style for every occasion.
+          </p>
+
+          <a href="#">
+            Read More
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
+
+      <!-- Blog 2 -->
       <div class="blog-box">
-        <diV class ="blog-img">
-          <img src="img/blog/b2.jpg" alt="">
-        </diV>
-        <div class="blog-details">
-          <h4> How to Style a Modern Look</h4>
-          <p> Create elegant everyday outfits with timeless essentials and versatile fashion pieces. Mix, match, 
-            and express your unique personality with confidence.</p>
-            <a href="#">CONTINUE READING</a>
+        <div class="blog-img">
+          <img src="img/blog/b2.jpg" alt="" />
+          <span class="category">Lifestyle</span>
         </div>
-        <h1>13/04</h1>
+
+        <div class="blog-details">
+          <div class="blog-meta">
+            <span><i class="far fa-calendar"></i> Apr 13, 2026</span>
+            <span><i class="far fa-clock"></i> 4 min read</span>
+          </div>
+
+          <h3>How to Style a Modern Look</h3>
+
+          <p>
+            Create elegant everyday outfits with timeless essentials and
+            versatile fashion pieces. Mix, match and express your own style.
+          </p>
+
+          <a href="#">
+            Read More
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
+
+      <!-- Blog 3 -->
       <div class="blog-box">
-        <diV class ="blog-img">
-          <img src="img/blog/b3.jpg" alt="">
-        </diV>
-        <div class="blog-details">
-          <h4> Must-Have Fashion Trends This Season</h4>
-          <p> Discover the latest collection of stylish clothing, vibrant colors, and wardrobe essentials that 
-             keep you looking fashionable all year round.</p>
-            <a href="#">CONTINUE READING</a>
+        <div class="blog-img">
+          <img src="img/blog/b3.jpg" alt="" />
+          <span class="category">Trending</span>
         </div>
-        <h1>12/01</h1>
+
+        <div class="blog-details">
+          <div class="blog-meta">
+            <span><i class="far fa-calendar"></i> Jan 12, 2026</span>
+            <span><i class="far fa-clock"></i> 6 min read</span>
+          </div>
+
+          <h3>Must-Have Fashion Trends This Season</h3>
+
+          <p>
+            Discover the latest collection of stylish clothing, vibrant colors,
+            and wardrobe essentials that keep you looking fashionable.
+          </p>
+
+          <a href="#">
+            Read More
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
+
+      <!-- Blog 4 -->
       <div class="blog-box">
-        <diV class ="blog-img">
-          <img src="img/blog/b4.jpg" alt="">
-        </diV>
-        <div class="blog-details">
-          <h4> Minimal Fashion, Maximum Comfort</h4>
-          <p> Simple designs, premium fabrics, and neutral shades come together to create effortless looks 
-             that never go out of style.</p>
-            <a href="#">CONTINUE READING</a>
+        <div class="blog-img">
+          <img src="img/blog/b4.jpg" alt="" />
+          <span class="category">Minimal</span>
         </div>
-        <h1>16/01</h1>
+
+        <div class="blog-details">
+          <div class="blog-meta">
+            <span><i class="far fa-calendar"></i> Jan 16, 2026</span>
+            <span><i class="far fa-clock"></i> 3 min read</span>
+          </div>
+
+          <h3>Minimal Fashion, Maximum Comfort</h3>
+
+          <p>
+            Simple designs, premium fabrics and neutral shades come together to
+            create effortless looks that never go out of style.
+          </p>
+
+          <a href="#">
+            Read More
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
-    
+
+      <!-- Blog 5 -->
       <div class="blog-box">
-        <diV class ="blog-img">
-          <img src="img/blog/b6.jpg " alt="">
-        </diV>
-        <div class="blog-details">
-          <h4> Refresh Your Wardrobe with Timeless Fashion</h4>
-          <p> Upgrade your everyday style with versatile pieces crafted for comfort, quality, and elegance. 
-             Fashion that fits every season and every moment.</p>
-            <a href="#">CONTINUE READING</a>
+        <div class="blog-img">
+          <img src="img/blog/b6.jpg" alt="" />
+          <span class="category">Collection</span>
         </div>
-        <h1>10/03</h1>
+
+        <div class="blog-details">
+          <div class="blog-meta">
+            <span><i class="far fa-calendar"></i> Mar 10, 2026</span>
+            <span><i class="far fa-clock"></i> 7 min read</span>
+          </div>
+
+          <h3>Refresh Your Wardrobe with Timeless Fashion</h3>
+
+          <p>
+            Upgrade your everyday style with versatile pieces crafted for
+            comfort, quality and elegance. Fashion that fits every season.
+          </p>
+
+          <a href="#">
+            Read More
+            <i class="fas fa-arrow-right"></i>
+          </a>
+        </div>
       </div>
     </section>
 
