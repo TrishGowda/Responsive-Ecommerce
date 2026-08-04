@@ -1892,3 +1892,243 @@ SHOP PAGE ONLY ANIMATION
     filter: blur(0);
   }
 }
+
+/* =====================================
+   RESPONSIVE DESIGN
+===================================== */
+
+/* ---------- Tablet (991px) ---------- */
+
+@media (max-width: 991px) {
+  /* Blog Hero */
+  .blog-header {
+    height: 60vh;
+  }
+
+  .hero-content h1 {
+    font-size: 45px;
+    line-height: 55px;
+  }
+
+  .hero-content p {
+    font-size: 16px;
+  }
+
+  /* Blog Section */
+  #blog {
+    padding: 60px 40px;
+  }
+
+  .blog-box {
+    flex-direction: column;
+  }
+
+  .blog-img {
+    width: 100%;
+  }
+
+  .blog-details {
+    width: 100%;
+    padding: 30px;
+  }
+
+  .blog-details h3 {
+    font-size: 26px;
+  }
+
+  /* Search */
+  #searchBlog {
+    width: 80%;
+  }
+
+  /* Product */
+  .pro:hover {
+    transform: translateY(-6px);
+  }
+}
+
+/* ---------- Mobile (600px) ---------- */
+
+@media (max-width: 600px) {
+  /* Wishlist */
+  .wishlist {
+    width: 36px;
+    height: 36px;
+    top: 10px;
+    right: 10px;
+  }
+
+  .wishlist i {
+    font-size: 15px;
+  }
+
+  /* Loader */
+
+  .loader {
+    width: 55px;
+    height: 55px;
+  }
+
+  .loader-wrapper h2 {
+    font-size: 22px;
+  }
+
+  .loader-wrapper p {
+    font-size: 13px;
+  }
+
+  /* Hero */
+
+  .blog-header {
+    height: 55vh;
+  }
+
+  .hero-content {
+    padding: 20px;
+  }
+
+  .hero-tag {
+    font-size: 12px;
+    padding: 7px 15px;
+  }
+
+  .hero-content h1 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
+  .hero-content p {
+    font-size: 14px;
+    line-height: 22px;
+  }
+
+  .hero-btn {
+    padding: 12px 25px;
+    font-size: 14px;
+  }
+
+  /* Blog Cards */
+
+  #blog {
+    padding: 40px 20px;
+  }
+
+  .blog-box {
+    margin-bottom: 35px;
+    border-radius: 15px;
+  }
+
+  .blog-details {
+    padding: 20px;
+  }
+
+  .blog-details h3 {
+    font-size: 22px;
+  }
+
+  .blog-details p {
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .blog-meta {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  /* Category */
+
+  .category {
+    top: 10px;
+    left: 10px;
+    padding: 6px 12px;
+    font-size: 12px;
+  }
+
+  /* Search Filter */
+
+  #blog-filter {
+    padding: 35px 20px;
+  }
+
+  #searchBlog {
+    width: 100%;
+    padding: 13px 18px;
+  }
+
+  .filter-buttons {
+    gap: 10px;
+  }
+
+  .filter-btn {
+    padding: 10px 18px;
+    font-size: 14px;
+  }
+
+  /* Back To Top */
+
+  #topBtn {
+    width: 42px;
+    height: 42px;
+    right: 15px;
+    bottom: 15px;
+  }
+
+  /* Toast */
+
+  #toast {
+    width: calc(100% - 40px);
+    right: -100%;
+    font-size: 14px;
+  }
+
+  #toast.show {
+    right: 20px;
+  }
+
+  /* Product Overlay Disable */
+
+  .pro::before {
+    display: none;
+  }
+
+  .pro:hover img {
+    transform: scale(1.03);
+  }
+
+  /* Animation */
+
+  body.fade-out {
+    transform: translateX(-20px) scale(0.98);
+  }
+
+  .shop-page {
+    animation-duration: 0.6s;
+  }
+}
+
+/* ---------- Extra Small Mobile (400px) ---------- */
+
+@media (max-width: 400px) {
+  .hero-content h1 {
+    font-size: 27px;
+    line-height: 35px;
+  }
+
+  .hero-content p {
+    font-size: 13px;
+  }
+
+  .blog-details h3 {
+    font-size: 20px;
+  }
+
+  .filter-btn {
+    width: 100%;
+  }
+
+  .wishlist {
+    width: 32px;
+    height: 32px;
+  }
+}
